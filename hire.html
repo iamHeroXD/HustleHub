@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hire - HustleHub</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="hire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo round.jpg" alt="HustleHub Logo" class="logo">
+            <span>HustleHub</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hire.html" class="active">For Hire</a></li>
+            <li><a href="hiring.html">Hiring</a></li>
+            <li><a href="tip.html">Passes</a></li>
+            <li><a href="cloth.html">Clothes</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- For Hire Section -->
+    <section class="hire-section">
+        <div class="section-header">
+            <h2>Premium <span>Freelancers</span></h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Find top-tier professionals for your projects</p>
+            
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Filter by:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="animator">Animators</option>
+                        <option value="builder">Builders</option>
+                        <option value="scripter">Scripters</option>
+                        <option value="ui">UI Designers</option>
+                        <option value="vfx">VFX Artists</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="premium-filter">Status:</label>
+                    <select id="premium-filter" class="filter-select">
+                        <option value="all">All Freelancers</option>
+                        <option value="premium">Premium Only</option>
+                        <option value="verified">Verified Only</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="hire-grid">
+            <!-- Premium Freelancer Card 1 -->
+            <div class="hire-card premium" data-category="animator" data-status="premium verified">
+                <div class="card-glow"></div>
+                <div class="premium-ribbon">
+                    <i class="fas fa-crown"></i> PREMIUM
+                </div>
+                <div class="hire-header">
+                    <div class="profile-badge">
+                        <div class="avatar-wrapper">
+                            <img src="../assets/images/freelancer1.jpg" alt="AnimationPro" class="profile-avatar">
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="verification-badge">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">AnimationPro</h3>
+                        <p class="profile-title">Senior R6/R15 Animator</p>
+                        <div class="rating-badge">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="review-count">47 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-showcase">
+                    <div class="portfolio-item" style="background-image: url('../assets/images/animation1.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/animation2.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/animation3.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/animation4.jpg')"></div>
+                </div>
+                
+                <div class="skills-section">
+                    <div class="skill-tag">R6 Animations</div>
+                    <div class="skill-tag">R15 Rigging</div>
+                    <div class="skill-tag">Combat</div>
+                    <div class="skill-tag">Emotes</div>
+                </div>
+                
+                <div class="profile-description">
+                    <p>Professional animator with 5+ years experience creating high-quality animations for top Roblox games. Specialize in combat and movement animations with realistic weight and impact.</p>
+                </div>
+                
+                <div class="action-bar">
+                    <a href="../profile/profile.html?id=animationpro" class="view-profile-btn">
+                        <i class="fas fa-user-circle"></i> View Profile
+                    </a>
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="amount">1,200 <small>Robux</small></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regular Freelancer Card 2 -->
+            <div class="hire-card" data-category="builder" data-status="verified">
+                <div class="hire-header">
+                    <div class="profile-badge">
+                        <div class="avatar-wrapper">
+                            <img src="../assets/images/freelancer2.jpg" alt="BuilderMaster" class="profile-avatar">
+                        </div>
+                        <div class="verification-badge">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">BuilderMaster</h3>
+                        <p class="profile-title">3D Environment Artist</p>
+                        <div class="rating-badge">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">32 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-showcase">
+                    <div class="portfolio-item" style="background-image: url('../assets/images/build1.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/build2.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/build3.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/build4.jpg')"></div>
+                </div>
+                
+                <div class="skills-section">
+                    <div class="skill-tag">Blender</div>
+                    <div class="skill-tag">High Poly</div>
+                    <div class="skill-tag">Optimization</div>
+                    <div class="skill-tag">Texturing</div>
+                </div>
+                
+                <div class="profile-description">
+                    <p>Specializing in detailed 3D environments and assets for Roblox games. Focus on creating optimized, game-ready models with realistic textures and materials.</p>
+                </div>
+                
+                <div class="action-bar">
+                    <a href="../profile/profile.html?id=builderMaster" class="view-profile-btn">
+                        <i class="fas fa-user-circle"></i> View Profile
+                    </a>
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="amount">800 <small>Robux</small></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Freelancer Card 3 -->
+            <div class="hire-card premium" data-category="scripter" data-status="premium verified">
+                <div class="card-glow"></div>
+                <div class="premium-ribbon">
+                    <i class="fas fa-crown"></i> PREMIUM
+                </div>
+                <div class="hire-header">
+                    <div class="profile-badge">
+                        <div class="avatar-wrapper">
+                            <img src="../assets/images/freelancer3.jpg" alt="CodeWizard" class="profile-avatar">
+                            <div class="online-dot"></div>
+                        </div>
+                        <div class="verification-badge">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">CodeWizard</h3>
+                        <p class="profile-title">Senior Lua Programmer</p>
+                        <div class="rating-badge">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">89 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-showcase">
+                    <div class="portfolio-item" style="background-image: url('../assets/images/script1.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/script2.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/script3.jpg')"></div>
+                    <div class="portfolio-item" style="background-image: url('../assets/images/script4.jpg')"></div>
+                </div>
+                
+                <div class="skills-section">
+                    <div class="skill-tag">Lua</div>
+                    <div class="skill-tag">Game Systems</div>
+                    <div class="skill-tag">Data Stores</div>
+                    <div class="skill-tag">Optimization</div>
+                </div>
+                
+                <div class="profile-description">
+                    <p>Expert Lua programmer with extensive experience building complex game systems. Specialize in creating efficient, scalable code with proper documentation and modular design.</p>
+                </div>
+                
+                <div class="action-bar">
+                    <a href="../profile/profile.html?id=codewizard" class="view-profile-btn">
+                        <i class="fas fa-user-circle"></i> View Profile
+                    </a>
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="amount">2,500 <small>Robux</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script src="hire.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
