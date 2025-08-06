@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Clothes - HustleHub</title>
+    <title>Premium Roblox Clothes - HustleHub</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="cloth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation (same as index.html) -->
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <!-- 3D Background -->
+    <div id="threejs-background" class="threejs-background"></div>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo-container">
             <img src="logo round.jpg" alt="HustleHub Logo" class="logo">
@@ -37,99 +54,221 @@
     <!-- Clothes Section -->
     <section class="clothes-section">
         <div class="section-header">
-            <h2>Premium <span>Roblox Clothes</span></h2>
-            <div class="divider"></div>
-            <p>Check out our exclusive clothing items created by our talented team</p>
+            <h1>Premium <span>Roblox</span> Fashion</h1>
+            <p class="subtitle">Elevate your avatar with our exclusive clothing collection</p>
+            <div class="search-filter">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search clothing items...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <select>
+                        <option value="all">All Items</option>
+                        <option value="shirts">Shirts</option>
+                        <option value="pants">Pants</option>
+                        <option value="limited">Limited</option>
+                    </select>
+                    <select>
+                        <option value="popular">Popular</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
         </div>
 
         <div class="clothes-grid">
             <!-- Clothing Item 1 -->
             <div class="clothing-card">
                 <div class="clothing-image">
-                    <img src="ChatGPT Image May 25, 2025, 10_35_07 AM.png" alt="Cool T-Shirt">
-                    <div class="price-tag">50 Robux</div>
+                    <img src="SHIRT1.png" alt="Cool T-Shirt">
+                    <div class="price-tag">10 Robux</div>
+                    <div class="quick-view">Quick View</div>
                 </div>
                 <div class="clothing-info">
-                    <h3>Cloth 1</h3>
-                    <p>Show your support with our clothes</p>
-                    <a href="https://www.roblox.com/catalog/link" class="btn btn-primary" target="_blank">Buy Now</a>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24)</span>
+                    </div>
+                    <h3>Not a runner! shirt</h3>
+                    <p>Show your support with our premium quality shirt</p>
+                    <div class="card-footer">
+                        <a href="https://www.roblox.com/catalog/72037918254343/Not-A-Runner-Shirt" class="btn btn-primary" target="_blank">Buy Now</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
                 </div>
             </div>
 
             <!-- Clothing Item 2 -->
             <div class="clothing-card">
                 <div class="clothing-image">
-                    <img src="ChatGPT Image May 25, 2025, 10_35_07 AM.png" alt="Stylish Shirt">
-                    <div class="price-tag">75 Robux</div>
+                    <img src="SHIRT2.png" alt="Stylish Shirt">
+                    <div class="price-tag">10 Robux</div>
+                    <div class="quick-view">Quick View</div>
                 </div>
                 <div class="clothing-info">
-                    <h3>Cloth 2</h3>
-                    <p>Show your support with our clothes</p>
-                    <a href="https://www.roblox.com/catalog/link" class="btn btn-primary" target="_blank">Buy Now</a>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(18)</span>
+                    </div>
+                    <h3>Golden Apple Shirt</h3>
+                    <p>Show your support with our premium quality shirt</p>
+                    <div class="card-footer">
+                        <a href="https://www.roblox.com/catalog/81270153927003/The-Golden-shirt" class="btn btn-primary" target="_blank">Buy Now</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
                 </div>
             </div>
 
             <!-- Clothing Item 3 -->
             <div class="clothing-card">
                 <div class="clothing-image">
-                    <img src="ChatGPT Image May 25, 2025, 10_35_07 AM.png" alt="Cool Pants">
+                    <img src="shirt3.png" alt="Cool Pants">
                     <div class="price-tag">100 Robux</div>
+                    <div class="quick-view">Quick View</div>
                 </div>
                 <div class="clothing-info">
-                    <h3>Cloth 3</h3>
-                    <p>Show your support with our clothes</p>
-                    <a href="https://www.roblox.com/catalog/link" class="btn btn-primary" target="_blank">Buy Now</a>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(32)</span>
+                    </div>
+                    <h3>Hustlehub official shirt</h3>
+                    <p>Show your support with our premium quality shirt</p>
+                    <div class="card-footer">
+                        <a href="https://www.roblox.com/catalog/116808242061381/HustleHub-Official-Shirt" class="btn btn-primary" target="_blank">Buy Now</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
                 </div>
             </div>
 
             <!-- Clothing Item 4 -->
             <div class="clothing-card">
                 <div class="clothing-image">
-                    <img src="ChatGPT Image May 25, 2025, 10_35_07 AM.png" alt="Stylish Hat">
-                    <div class="price-tag">150 Robux</div>
+                    <img src="Roblox Avatar in Navy Hoodie.png" alt="Stylish Hat">
+                    <div class="price-tag">10 Robux</div>
+                    <div class="quick-view">Quick View</div>
                 </div>
                 <div class="clothing-info">
-                    <h3>Cloth 4</h3>
-                    <p>Show your support with our clothes</p>
-                    <a href="https://www.roblox.com/catalog/link" class="btn btn-primary" target="_blank">Buy Now</a>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(27)</span>
+                    </div>
+                    <h3>HustleHub-2-0v-Official-Shirt</h3>
+                    <p>Show your support with our premium quality shirt</p>
+                    <div class="card-footer">
+                        <a href="https://www.roblox.com/catalog/87999984076265/HustleHub-2-0v-Official-Shirt" class="btn btn-primary" target="_blank">Buy Now</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
                 </div>
             </div>
 
             <!-- Clothing Item 5 -->
             <div class="clothing-card">
                 <div class="clothing-image">
-                    <img src="ChatGPT Image May 25, 2025, 10_35_07 AM.png" alt="Clothing Bundle">
-                    <div class="price-tag">250 Robux</div>
+                    <img src="shirt4.png" alt="Clothing Bundle">
+                    <div class="price-tag">10 Robux</div>
+                    <div class="quick-view">Quick View</div>
                 </div>
                 <div class="clothing-info">
-                    <h3>Cloth 5</h3>
-                    <p>Show your support with our clothes</p>
-                    <a href="https://www.roblox.com/catalog/link" class="btn btn-primary" target="_blank">Buy Now</a>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(45)</span>
+                    </div>
+                    <h3>Developer Jersey</h3>
+                    <p>Show your support with our premium quality shirt</p>
+                    <div class="card-footer">
+                        <a href="https://www.roblox.com/catalog/134648397691199/Developer-Jersey" class="btn btn-primary" target="_blank">Buy Now</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
                 </div>
             </div>
 
             <!-- Clothing Item 6 -->
-            <div class="clothing-card">
+            <div class="clothing-card featured">
+                <div class="ribbon">Out OF stock</div>
                 <div class="clothing-image">
                     <img src="ChatGPT Image May 25, 2025, 10_35_07 AM.png" alt="Limited Item">
-                    <div class="price-tag">500 Robux</div>
+                    <div class="price-tag">Progress..</div>
+                    <div class="quick-view">Quick View</div>
                 </div>
                 <div class="clothing-info">
-                    <h3>Limited Edition</h3>
-                    <p>Show your support with our clothes</p>
-                    <a href="https://www.roblox.com/catalog/link" class="btn btn-primary" target="_blank">Buy Now</a>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(56)</span>
+                    </div>
+                    <h3>Out of stock</h3>
+                    <p>Under progress</p>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-primary" target="_blank">Buy Now</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="pagination">
+            <button class="btn btn-secondary"><i class="fas fa-chevron-left"></i> Previous</button>
+            <div class="page-numbers">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <span>...</span>
+                <button>5</button>
+            </div>
+            <button class="btn btn-secondary">Next <i class="fas fa-chevron-right"></i></button>
+        </div>
     </section>
 
-    <!-- Footer (same as index.html) -->
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get notified about new clothing releases and exclusive deals</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="hustlehub logo.jpg" alt="HustleHub Logo">
                 <h3>HustleHub</h3>
                 <p>Your ultimate freelancing destination</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-roblox"></i></a>
+                </div>
             </div>
             <div class="footer-links">
                 <div class="link-group">
@@ -158,19 +297,39 @@
                         <li><a href="#">Refund Policy</a></li>
                     </ul>
                 </div>
+                <div class="link-group">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2023 HustleHub. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-discord"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-roblox"></i></a>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-amex"></i>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Robux_2019_Logo.svg/1200px-Robux_2019_Logo.svg.png" alt="Robux" style="height: 20px;">
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
     <script src="cloth.js"></script>
     <script src="../script.js"></script>
 </body>
